@@ -10,9 +10,11 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
+    margin-top: 10px;
 }
 .menu{
     
+    align-items: center;
 }
 .menu ul{
     margin: 0;
