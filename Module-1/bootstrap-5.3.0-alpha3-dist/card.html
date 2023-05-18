@@ -7,8 +7,26 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <title>Bootstarp Card</title>
     <style>
+        .carousel-item{
+            max-height: 100%;
+            background-color: #ccc;
+            position: relative;
+        }
+        .container{
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding-bottom: 50px;
+        }
         .img-control{
-            width: 100%;
+           
+            background-position: center;
+            background-size: cover;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
         }
     </style>
 </head>
@@ -45,7 +63,7 @@
             
         </div>
     </div> -->
-    <div class="container">
+    <!-- <div class="container">
         <div class="card-group">
             <div class="card">
                 <img src="img/abusayed.jpg" alt="" srcset="">
@@ -54,8 +72,65 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
    
+    <!-- <div class="container">
+        <div class="card-1 mx-auto mt-3" style="width: 40%;border:5px solid#000">
+            <img class="img-fluid d-flex" src="img/abusayed.jpg" alt="" srcset="">
+        </div>
+    </div> -->
+    
+    <!-- <div class="container">
+        <div style="border:3px solid red;width: 100%;height: auto;" class="responsive_img mt-3 mx-auto">
+            <img class="img-fluid mx-auto d-flex" src="img/abusayed.jpg" alt="Abu Sayed Picture" srcset="">
+        </div>
+    </div> -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 2"></button>
+            
+          </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active responsive_img">
+                <img src="img/slide1.jpg" class="d-block w-100" alt="...">
+                <div class="container">
+                    <h1>Title #1</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, laborum?</p>
+                    <a href="" class="btn btn-lg btn-primary">Download</a>
+                
+                </div>
+            </div>
+            <div class="carousel-item responsive_img">
+                <img src="img/slide2.jpg" class="d-block w-100 img-control" alt="...">
+                <div class="container">
+                    <h1>Title #2</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, laborum?</p>
+                    <a href="" class="btn btn-lg btn-primary">Submit</a>
+                
+                </div>
+            </div>
+            <div class="carousel-item responsive_img">
+                <img src="img/slide3.jpg" class="d-block w-100 img-control" alt="...">
+                <div class="container">
+                    <h1>Title #3</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, laborum?</p>
+                    <a href="" class="btn btn-lg btn-primary">Submit</a>
+                
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
     <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
 </body>
