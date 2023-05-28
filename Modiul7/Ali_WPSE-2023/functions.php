@@ -6,16 +6,13 @@
  */
 
  //Theme Title
- add_theme_support( 'title-tag');
-
+ add_theme_support('title-tag');
 
  // Theme css & JQuety File calling
  function sayed_css_js_file_calling(){
     wp_enqueue_style( 'wpse-style', get_stylesheet_uri());
     wp_register('bootstrap', get_template_directory_uri().'css/bootstrap.css', array(), '5.0.2', 'all');
-
     wp_register('custom', get_template_directory_uri().'css/custom.css', array(), '1.0.0', 'all');
-
     wp_enqueue_style( 'bootstrap');
     wp_enqueue_style( 'custom');
  
